@@ -90,6 +90,7 @@ a:hover {
 
 /* Modal Content/Box */
 .modal-content {
+    position: relative;
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -99,7 +100,7 @@ a:hover {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: orchid;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -107,7 +108,7 @@ a:hover {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: mediumblue;
   text-decoration: none;
   cursor: pointer;
 } 
@@ -351,30 +352,40 @@ function createDiv(height, width) {
   <script>
     
     // Get the modal
-var modal = document.getElementById("myModal");
+var modals = document.querySelectorAll(".modal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.querySelectorAll("button.modal-button");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spans = document.getElementsByClassName("close");
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
 }
-
+      
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
     </script>   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
