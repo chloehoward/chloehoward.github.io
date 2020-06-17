@@ -17,7 +17,20 @@
         font-size: 18px;
       }
     </style>
-    
+    <!-- Image style -->
+    <style>
+        img {
+            display: block;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .nav {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     <!-- Navigation Bar -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -49,12 +62,6 @@
     
 <title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-img {
-  width: 100%;
-  height: 100%;
-}
-</style>
     <script type="text/javascript">
 // <![CDATA[
 var colour="#00baff";
@@ -234,7 +241,7 @@ function createDiv(height, width) {
     
  <!-- Navigation Bar -->   
     <div class="topnav">
-    <a class="active" href="index.html"><img src="Content/divider.png"></a>
+    <a class="active" href="index.html"><img class="nav" src="Content/divider.png"></a>
     <a href="About.html">About</a>
     <a href="Portfolio.html">Portfolio</a>
     <a href="Tattoos.html">Tattoos</a>
@@ -243,11 +250,11 @@ function createDiv(height, width) {
 
 <div class="container">
 <div class="column text-center">     
-<h1>Chloe Howard Art</h1>
+<h1>Chloe Howard Art<br /></h1>
     </div>
     </div>
 <div class="container">
-    <p> <img src="Content/logo.gif" height="30%" width="30%"> </p>
+    <img src="Content/logo.gif">
     </div>    
     
     <!-- Optional JavaScript -->
