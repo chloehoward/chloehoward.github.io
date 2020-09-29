@@ -11,7 +11,7 @@
     
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Marmelad&display=swap" rel="stylesheet"> 
-   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     
     <style>
          .header {
@@ -76,7 +76,48 @@ a:active {
 }
     </style>
     
-<title>About</title>
+    <style>
+     /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: orchid;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: mediumblue;
+  text-decoration: none;
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat946.png), auto;
+} 
+    </style>
+    
+<title>Tattoos</title>
     
     <script type="text/javascript">
 // <![CDATA[
@@ -253,32 +294,114 @@ function createDiv(height, width) {
     <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat322.png), auto;}
 
     </style>
-    
+
 </head>
 <body>
    
  <!-- Navigation Bar -->   
     <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="About.html"><img src="Content/divider.png"></a>
-    <a href="Portfolio.html">Portfolio</a>
-    <a href="Tattoos.html">Tattoos</a>
-    <a href="Shop.html">Shop</a>
+    <a href="index">Home</a>
+    <a href="about">About</a>
+    <a href="portfolio">Portfolio</a>
+    <a href="tattoos"><img src="Content/divider.png"></a>    
+    <a href="shop">Shop</a>
     </div>
-<div class="header"><h1>About</h1><p><img src="Content/divider.png"></p></div>
+<div class="header"><h1>Tattoos</h1>
+    <p><img src="Content/divider.png"></p></div>
 <div class="container">
 <div class="column text-center">  
-<p>Chloe Howard is an artist based out of Philadelphia. For commission or work inquiries, contact by email: chloe.howard.art@gmail.com
-</p>
-    <p><img src="Content/logo.gif" height="30%" width="30%"></p>
-    
-    <p>Instagram: <a href="https://www.instagram.com/chloe_howard_art/">@chloe_howard_art</a></p>
-    
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/7f0ebbaceb8e508e94fbaac0172d039f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-    
+     
+    <p>Self-taught handpoke tattoos out of a private studio in West Philadelphia.</p> 
+    <p> ✿ Red Cross Bloodborne Pathogens Training certifed ✿ </p> 
+<p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdakB2eirYijLcBJLLdR6qRYcIMUPUC-fGdfA7oxt7dVqd4g/viewform"><img src="Content/logo.png" height="40%" width="40%">
+        <br> Books are closed - Reopening TBA
+        </a></p>
+     <p>✿ Custom designs or flash tattoos - <button class="modal-button" href="#myModal1"><img src="Content/readme.jpg" href="#myModal1">Click here to view flash gallery</button> ✿</p> 
+         <br>
     </div>
     </div>
     
+            <!-- The Modal -->
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><img src="Content/images/tattoo/flash1.jpg" class="img-responsive" width="100%" height="auto"></p>
+    <p><img src="Content/images/tattoo/flash2.jpg" class="img-responsive" width="100%" height="auto"></p>
+    <p><img src="Content/images/tattoo/flash3.jpg" class="img-responsive" width="100%" height="auto"></p>
+    <p><img src="Content/images/tattoo/flash4.jpg" class="img-responsive" width="100%" height="auto"></p>
+    <p><img src="Content/images/tattoo/flash5.jpg" class="img-responsive" width="100%" height="auto"></p>
+    <p><img src="Content/images/tattoo/flash6.jpg" class="img-responsive" width="100%" height="auto"></p>  
+    <p><img src="Content/images/tattoo/flash7.jpg" class="img-responsive" width="100%" height="auto"></p>
+    <p><img src="Content/images/tattoo/flash8.jpg" class="img-responsive" width="100%" height="auto"></p>    
+  </div>
+
+</div>
+   
+    
+    <div class="w3-container w3-orchid">
+        <div class="column text-center">
+     <h1>Gallery</h1>
+            </div>
+        <div class="column text-center"><p><img src="Content/divider.png"></p></div>
+        <div class="row">
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat1.jpg" width="100%" height="100%"></div>
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat2.jpg" width="100%" height="100%"></div>
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat3.jpg" width="100%" height="100%"></div>
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat7.jpg" width="100%" height="100%"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat4.jpg" width="100%" height="100%"></div>
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat5.jpg" width="100%" height="100%"></div>
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat6.jpg" width="100%" height="100%"></div>
+            <div class="col-sm-3"><img src="Content/images/tattoo/tat8.jpg" width="100%" height="100%"></div>
+        </div>
+        <br>
+        <div class="column text-center"><p><img src="Content/divider.png"></p></div>
+    </div>
+    
+    
+  <script>
+    
+    // Get the modal
+var modals = document.querySelectorAll(".modal");
+
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks on the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+      
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+    </script> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
