@@ -15,6 +15,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     
     <style>
+    
+         /* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+    z-index: 9999;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+} 
+        
         body {
             font-family: 'Marmelad', sans-serif;
             background-color: lightgray
@@ -25,8 +60,6 @@
         .white {
             background-color: whitesmoke
         }
-    </style>  
-       <style>
      /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -65,80 +98,136 @@
   text-decoration: none;
   cursor: pointer;
 } 
+
+.aligncenter {
+    text-align: center;
+}
+
+
     </style>
 </head>
 <body>
         <div class="container-fluid pink p-3">
-            <h1>Design Portfolio</h1>
+            <h1>Chloe Howard</h1>
             </div>
+    <div id="navbar">
+    <a href="#inhouse">In-House</a>
+    <a href="#freelance">Freelance</a>
+    <a href="#projects">Projects</a>
+</div>
     <div class="container-fluid white">
             <div class="w-75 mx-auto p-3">
-            <p><strong>Chloe Howard</strong> is an artist and designer based in Philadelphia, Pennsylvania. Specializing in illustration and graphic/layout design for 
-both print and web, with experience of 2 years working with an in-house design team, and 2 years freelance digital illustration.
+            <p> Artist and designer based in Philadelphia, Pennsylvania. Specializing in illustration and graphic/layout design for both print and web; with experience of 2 years working with an in-house design team, and 2 years freelance digital illustration.
                 <br>
                 <strong>Contact</strong> by email at chloe.howard.art@gmail.com</p>
             </div>
         </div>
-            <div class="container p-5">
+    <div class="container"><h1 id="inhouse">In-house</h1>  
                 <div class="row">
-            <div class="col-sm-4 text-center p-2"><img src="Content/Thumbnails/illustration-thumb.jpg" width="100%" height="auto"><button class="modal-button m-1" href="#myModal1">Illustration</button></div>
-            <div class="col-sm-4 text-center p-2"><img src="Content/Thumbnails/layout-thumb.jpg" width="100%" height="auto"><button class="modal-button m-1" href="#myModal2">Layout </button>
-                    </div>
-            <div class="col-sm-4 text-center p-2"><img src="Content/Thumbnails/ads-thumb.jpg" width="100%" height="auto">
-                <button class="modal-button m-1" href="#myModal3">Graphics</button>
-                    </div>
+                <div class="col-sm-6"> 
+<img src="Content/images/design/menuboards.png" width="100%" height="auto">
+Ice Cream Menu Boards - Franklin Ice Cream Bar
+<p><button class="modal-button" href="#myModal1">More Info</button></p>
+            <!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <p class="aligncenter"><img src="Content/images/design/menuboardsphoto.jpg" width="75%" height="auto"><br>
+        Images from Eater Philadelphia - <a href="https://philly.eater.com/2017/8/31/16229806/franklin-ice-cream-bar-franklin-fountain">"First Look at the Retro Franklin Ice Cream Bar"</a>
+     <img src="Content/images/design/menuboardroom.png" width="75%" height="auto"></p> 
+  </div>
+</div>
+<img src="Content/images/design/menu.jpg" width="100%" height="auto">
+Event Menu Sign - Franklin Ice Cream Bar
+</div>
+<div class="col-sm-6"><img src="Content/images/design/weddingsquare.jpg" width="100%" height="auto">
+Customizable Chocolate Packaging - Shane Confectionery
+<p><button class="modal-button" href="#myModal2">More Info</button></p>
+    <!-- The Modal -->
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="aligncenter"><img src="Content/images/design/weddingsquaremockup.jpg" width="75%" height="auto"></p> 
+  </div>
+</div>
+<img src="Content/images/design/phillymade.png" width="100%" height="auto">
+"Made in Philly" Stickers - the Franklin Fountain
+<img src="Content/images/design/112.jpg" width="100%" height="auto">
+Print Advertisement and Character Design - Franklin Ice Cream Bar
+    <p><button class="modal-button" href="#myModal3">More Info</button></p>
+    <!-- The Modal -->
+<div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<p class="aligncenter"><img src="Content/images/design/franklinsocial.jpg" width="75%" height="auto"></p></div>       
+  </div>
+        </div>    
                     </div>
             </div> 
-                          <!-- The Modal 1 -->
-<div id="myModal1" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p><img src="Content/images/design/foodpairing.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/anniversary1.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/anniversary3.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/laugh.jpg" width="100%" height="auto"></p>  
-    <p><img src="Content/images/design/thxgiving.jpg" width="100%" height="auto"></p>
-      
-      
-  </div>
-
-</div>    
-                          <!-- The Modal 2 -->
-<div id="myModal2" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p><img src="Content/images/design/spreads-1.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/spreads-2.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/menu.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/icecreamcatering.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/menuboards.png" width="100%" height="auto"></p>
-      
-  </div>
-
+    <div class="container">
+        <h1 id="freelance">Freelance</h1>
+        <div class="row">
+        <div class="col-sm-6">
+        <img src="Content/images/design/foodpairing.jpg" width="100%" height="auto">
+        The Temper - <a href="https://www.thetemper.com/non-alcoholic-drink-and-food-pairings/">"Non-Alcoholic Drinks to Pair with Your Favorite Meals"</a>
 </div>
-              
-              <!-- The Modal 3 -->
-<div id="myModal3" class="modal">
-
+        <div class="col-sm-6"><img src="Content/images/design/thxgiving.jpg" width="100%" height="auto">
+The Temper - <a href="https://www.thetemper.com/its-totally-okay-not-to-go-home-for-the-holidays/">"It's Totally Okay Not to Go Home for the Holidays"</a></div>    
+        </div>
+    </div>
+    <div class="container"><h1 id="projects">Personal Projects</h1>    
+<img src="Content/images/design/folkloremock.jpg" width="100%" height="auto">
+"F is for Folklore" Book
+<p><button class="modal-button" href="#myModal4">More Info</button></p>
+    <!-- The Modal -->
+<div id="myModal4" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p><img src="Content/images/design/112.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/seasons.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/seasonstories.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/weddingsquare.jpg" width="100%" height="auto"></p>
-    <p><img src="Content/images/design/phillymade.png" width="100%" height="auto"></p>
-      
-      
-  </div>
-
+<p class="aligncenter"><img src="Content/images/design/folkloremock1.jpg" width="75%" height="auto">
+<img src="Content/images/design/folklorebooklet.jpg" width="75%" height="auto">
+<img src="Content/images/design/folkloremock2.jpg" width="75%" height="auto">
 </div>
-        
+  </div>
+<img src="Content/images/design/seasonstorymock.jpg" width="100%" height="auto"> Seasonal Instagram Content - Mockup of Poetry Foundation
+<p><button class="modal-button" href="#myModal5">More Info</button></p>
+    <!-- The Modal -->
+<div id="myModal5" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<p class="aligncenter"><img src="Content/images/design/seasonstories.jpg" width="75%" height="auto">
+<img src="Content/images/design/seasons.jpg" width="75%" height="auto">
+<img src="Content/images/design/seasonsmock1.jpg" width="75%" height="auto">
+<img src="Content/images/design/seasonsmock2.jpg" width="75%" height="auto"></p>
+</div>
+    
+  </div>
+    </div>
+                
     <script>
+        
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
     
     // Get the modal
 var modals = document.querySelectorAll(".modal");
