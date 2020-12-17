@@ -10,6 +10,9 @@
     
      <title>Design Portfolio</title>
     
+    
+    <link rel="icon" href="Content/chpink.png">
+    
      <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Marmelad&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
@@ -19,7 +22,7 @@
          /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(219,110,214);
     z-index: 9999;
 }
 
@@ -27,7 +30,7 @@
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -52,13 +55,13 @@
         
         body {
             font-family: 'Marmelad', sans-serif;
-            background-color: lightgray
+            background-color: rgb(233,237,240)
             }
         .pink {
-            background-color: rgb(234,175,230)
+            background-color: rgb(219,110,214)
         }
-        .white {
-            background-color: whitesmoke
+        .blue {
+            background-color: rgb(193,197,241)
         }
      /* The Modal (background) */
 .modal {
@@ -102,30 +105,35 @@
 .aligncenter {
     text-align: center;
 }
-
+        
+        .alignleft {
+            text-align: left;
+        }
 
     </style>
 </head>
 <body>
-        <div class="container-fluid pink p-3">
-            <h1>Chloe Howard</h1>
-            </div>
     <div id="navbar">
     <a href="#inhouse">In-House</a>
     <a href="#freelance">Freelance</a>
     <a href="#projects">Projects</a>
 </div>
-    <div class="container-fluid white">
+        <div class="container-fluid pink  aligncenter">
+              <img src="Content/chblack.png" width="15%" height="15%">
+            </div>
+    
+    <div class="container-fluid blue p-3">
             <div class="w-75 mx-auto p-3">
-            <p> Artist and designer based in Philadelphia, Pennsylvania. Specializing in illustration and graphic/layout design for both print and web; with experience of 2 years working as an in-house design assistant, and 2 years freelance digital illustration.
+            <p> <b>Chloe Howard</b> is an artist and designer based in Philadelphia, Pennsylvania. Specializing in illustration and graphic/layout design for both print and web; with experience of 2 years working as an in-house design assistant, and 2 years freelance digital illustration.
                 <br>
                 <strong>Contact</strong> by email at chloe.howard.art@gmail.com</p>
             </div>
         </div>
-    <div class="container"><h1 id="inhouse">In-house</h1>  
+    <div class="container">
+        <h1 id="inhouse" class="aligncenter p-3">In-House</h1>  
                 <div class="row">
                 <div class="col-sm-6"> 
-<img src="Content/images/design/menuboards.png" width="100%" height="auto">
+<img src="Content/images/design/menuboards.png" width="100%" height="auto" class="p-3">
 <b>Ice Cream Menu Boards</b> - Franklin Ice Cream Bar
 <p><button class="modal-button" href="#myModal1">More Info</button></p>
                     
@@ -142,13 +150,13 @@
       <p class="aligncenter"><img src="Content/images/design/menuboardroom.png" width="75%" height="auto"></p>
   </div>
 </div>
-<img src="Content/images/design/menu.jpg" width="100%" height="auto">
+<img src="Content/images/design/menu.jpg" width="100%" height="auto" class="p-3">
 <b>Event Menu Sign</b> - Franklin Ice Cream Bar
     <br>
     This menu sign is a portable version of the Franklin Ice Cream Bar menu for pop-up events. The design needed to capture the 1930’s and 40’s Art Deco aesthetic, but is vectorized so it can be printed at a variety of sizes based on the need of the particular event. Instead of a traditional menu layout, the ice cream bars are broken down into larger highlighted steps with ingredient options underneath. It utilizes the brand’s color scheme of red, black, and white. 
                     
 </div>
-<div class="col-sm-6"><img src="Content/images/design/weddingsquaremockup.jpg" width="100%" height="auto">
+<div class="col-sm-6"><img src="Content/images/design/weddingsquaremockup.jpg" width="100%" height="auto" class="p-3">
 <b>Customizable Chocolate Packaging</b> - Shane Confectionery
 <p><button class="modal-button" href="#myModal2">More Info</button></p>
     <!-- The Modal -->
@@ -162,10 +170,10 @@
 This image shows two different “brand” options. The blue stickers feature Shane Confectionery's in house type and color branding. The designs on the brown background are made to match Shane Confectionery’s “Chocolate Works” line of small batch in-house chocolate, the products of which feature more ornamental graphics on kraft paper packaging.</p>
   </div>
 </div>
-<img src="Content/images/design/phillymade.png" width="100%" height="auto">
+<img src="Content/images/design/phillymade.png" width="100%" height="auto" class="p-3">
 <b>"Made in Philly" Stickers</b> - the Franklin Fountain
     <br>These stickers are made to be placed on a variety of food products produced by Franklin Fountain and sold throughout their multiple storefronts of Shane Confectionery, the Franklin Fountain, and Franklin Ice Cream Bar; as well as any satellite pop-ups. Because it is being used across multiple storefronts, the graphic needed to have a retro aesthetic but be simple enough to carry across the various eras represented by each storefront.
-<p><img src="Content/images/design/112mock.jpg" width="100%" height="auto">
+<p><img src="Content/images/design/112mock.jpg" width="100%" height="auto" class="p-3">
 <b>Print Advertisement and Character Design</b> - Franklin Ice Cream Bar
     <br><button class="modal-button" href="#myModal3">More Info</button></p>
     <!-- The Modal -->
@@ -182,14 +190,15 @@ This image shows two different “brand” options. The blue stickers feature Sh
   </div>
         </div>    
                     </div>
+        <p class="aligncenter"><img src="Content/chpink.png"></p>
             </div> 
     <div class="container">
-        <h1 id="freelance">Freelance</h1>
+        <h1 id="freelance" class="aligncenter p-3">Freelance</h1>
         <div class="row">
         <div class="col-sm-6">
-        <img src="Content/images/design/foodpairing.jpg" width="100%" height="auto">
-        <a href="https://www.thetemper.com/non-alcoholic-drink-and-food-pairings/">"Non-Alcoholic Drinks to Pair with Your Favorite Meals"</a>-The Temper
-        <img src="Content/images/design/sense1.jpg" width="100%" height="auto"> <b>"Grounding with the 5 Senses" Image Set</b>
+        <img src="Content/images/design/foodpairing.jpg" width="100%" height="auto" class="p-3">
+        <a href="https://www.thetemper.com/non-alcoholic-drink-and-food-pairings/">"Non-Alcoholic Drinks to Pair with Your Favorite Meals"</a>- The Temper
+        <img src="Content/images/design/sense1.jpg" width="100%" height="auto" class="p-3"> <b>"Grounding with the 5 Senses" Image Set</b>
             <p><button class="modal-button" href="#myModal4">More Info</button></p>
     <!-- The Modal -->
 <div id="myModal4" class="modal">
@@ -204,12 +213,13 @@ This image shows two different “brand” options. The blue stickers feature Sh
     
   </div>
 </div>
-        <div class="col-sm-6"><img src="Content/images/design/thxgiving.jpg" width="100%" height="auto">
+        <div class="col-sm-6"><img src="Content/images/design/thxgiving.jpg" width="100%" height="auto" class="p-3">
  <a href="https://www.thetemper.com/its-totally-okay-not-to-go-home-for-the-holidays/">"It's Totally Okay Not to Go Home for the Holidays"</a>- The Temper </div>    
         </div>
+        <p class="aligncenter"><img src="Content/chpink.png"></p>
     </div>
-    <div class="container"><h1 id="projects">Personal Projects</h1>    
-<img src="Content/images/design/folkloremock.jpg" width="100%" height="auto">
+    <div class="container"><h1 id="projects" class="aligncenter p-3">Personal Projects</h1>    
+<img src="Content/images/design/folkloremock.jpg" width="100%" height="auto" class="p-3">
 <b>"F is for Folklore" Book</b> - Tyler School of Art, Computers for Design
 <p><button class="modal-button" href="#myModal5">More Info</button></p>
     <!-- The Modal -->
@@ -231,7 +241,7 @@ This image shows two different “brand” options. The blue stickers feature Sh
           </p>
 </div>
   </div>
-<img src="Content/images/design/seasonstorymock.jpg" width="100%" height="auto"> <b>Seasonal Instagram Content</b> - Mockup of Poetry Foundation
+<img src="Content/images/design/seasonstorymock.jpg" width="100%" height="auto" class="p-3"> <b>Seasonal Instagram Content</b> - Mockup of Poetry Foundation
 <p><button class="modal-button" href="#myModal6">More Info</button></p>
     <!-- The Modal -->
 <div id="myModal6" class="modal">
@@ -245,6 +255,7 @@ This image shows two different “brand” options. The blue stickers feature Sh
 </div>
     
   </div>
+         <p class="aligncenter"><img src="Content/chpink.png"></p>
     </div>
                 
     <script>
